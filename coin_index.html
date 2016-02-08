@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Disappearing Coins</title>
+		<link rel="stylesheet" type="text/css" href="coin_styles.css">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script>
+			$(document).ready(function(){
+
+				$('img').click(function(){
+					$(this).hide();
+				});
+
+				$('button').click(function(){
+					$('img').show();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Collect the coins by clicking on them!</h1>
+		<div>
+			<img src="coin.jpg">
+			<img src="coin.jpg">
+			<img src="coin.jpg">
+			<img src="coin.jpg">
+		</div>
+		<div>
+			<img src="coin.jpg">
+			<img src="coin.jpg">
+			<img src="coin.jpg">
+			<img src="coin.jpg">
+		</div>
+		<button>Get more coins!</button>
+	</body>
+</html>
